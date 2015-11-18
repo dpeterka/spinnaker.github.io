@@ -10,6 +10,56 @@ lang: en
 
 # Troubleshooting Guide
 
+## General
+
+###Services
+
+#### Verify services are up
+
+```bash
+sudo service spinnaker status
+sudo service apache2 status
+sudo service cassandra status
+sudo service redis-server status
+```
+
+
+#### Cassandra
+
+Execute `nodetool status`. Should have result returned.
+
+#### Redis
+
+Execute `telnet localhost 6379`. You should have a connection established.
+
+#### Apache
+
+Execute `curl -I localhost:9000`. Response should be a HTTP code 200.
+
+
+### Logs
+
+#### Examine upstart logs
+
+Review logs in `/var/log/upstart/{service-name}.log`.  Spinnaker services are: clouddriver, rosco, rush, igor, front50, gate and orca.
+
+#### Examine application logs
+
+Review logs in `/var/log/spinnaker/{service-name}/{service-name}.log
+
+### Ensure permissions
+
+#### AWS
+
+Ensure you have a API access key and secret correctly configured in /home/spinnaker/.aws/credentials or an EC2 Instance role with "PowerUser" policy attached to the Spinnaker instance.
+
+#### GCE
+
+TBD
+
+
+
+
 ## I can't create an Application.
 This can manifest as either an endless spinner or as an error message rendered at the bottom of the Create Application dialog.
 
