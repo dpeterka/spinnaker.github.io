@@ -147,7 +147,7 @@ Create an AWS virtual machine.
   **Next Step**, followed by **Create Role**.
 * Goto [AWS Console](https://console.aws.amazon.com) > EC2.
 * Click **Launch Instance**.
-* Click **Select** for the **Spinnaker-Ubuntu-14.04-9 - ami-094a5a68** image.
+* Click **Select** for the **Spinnaker-Ubuntu-14.04-10 - [ami-02766663](https://console.aws.amazon.com/ec2/home?region=us-west-2#launchAmi=ami-02766663)** image.
 * Under **Step 2: Choose an Instance Type**, click the radio button
   for **m4.large**, then click **Next: Configure Instance Details**.
 * Set the **Auto-assign Public IP** field to **Enable**, and the **IAM
@@ -164,8 +164,9 @@ Create an AWS virtual machine.
           Host spinnaker
             HostName <Public IP address of instance you just created>
             IdentityFile </path/to/my-aws-account-keypair.pem>
-            LocalForward 8081 127.0.0.1:9000
+            LocalForward 9000 127.0.0.1:9000
             LocalForward 8084 127.0.0.1:8084
+            LocalForward 8087 127.0.0.1:8087
             User ubuntu
 * Execute
 
