@@ -22,3 +22,4 @@ lang: en
 | ap-southeast-2 | Spinnaker-Ubuntu-14.04-9 | 14.04 LTS      | HVM           | [ami-de520bbd](https://console.aws.amazon.com/ec2/home?region=ap-southeast-2#launchAmi=ami-de520bbd) |
 | ap-northeast-1 | Spinnaker-Ubuntu-14.04-9 | 14.04 LTS      | HVM           | [ami-9c1033f2](https://console.aws.amazon.com/ec2/home?region=ap-northeast-1#launchAmi=ami-9c1033f2) |
 | sa-east-1      | Spinnaker-Ubuntu-14.04-9 | 14.04 LTS      | HVM           | [ami-5d47fd31](https://console.aws.amazon.com/ec2/home?region=sa-east-1#launchAmi=ami-5d47fd31) |
+
