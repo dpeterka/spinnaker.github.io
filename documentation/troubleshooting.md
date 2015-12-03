@@ -45,13 +45,13 @@ Review logs in `/var/log/upstart/{service-name}.log`.  Spinnaker services are: c
 
 #### Examine application logs
 
-Review logs in `/var/log/spinnaker/{service-name}/{service-name}.log
+Review logs in `/var/log/spinnaker/{service-name}/{service-name}.log`
 
 ### Ensure permissions
 
 #### AWS
 
-Ensure you have a API access key and secret correctly configured in /home/spinnaker/.aws/credentials or an EC2 Instance role with "PowerUser" policy attached to the Spinnaker instance.
+Ensure you have an API access key and secret correctly configured in /home/spinnaker/.aws/credentials or an EC2 Instance role with "PowerUser" policy attached to the Spinnaker instance.
 
 #### GCE
 
